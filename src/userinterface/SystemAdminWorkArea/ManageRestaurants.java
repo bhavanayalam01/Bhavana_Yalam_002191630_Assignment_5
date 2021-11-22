@@ -268,7 +268,7 @@ public class ManageRestaurants extends javax.swing.JPanel {
         
         model.setRowCount(0);
         
-       // for()
+     
         for (UserAccount user : system.getUserAccountDirectory().getUserAccountList()) {
            
             if ("Business.Role.AdminRole".equals(user.getRole().getClass().getName())) {
