@@ -28,7 +28,7 @@ public class ManageRestaurants extends javax.swing.JPanel {
      */
     private JPanel userProcessContainer;
     private EcoSystem system;
-    //private RestaurantDirectory resDir=new RestaurantDirectory();
+   
     
     UserAccount user;
    
