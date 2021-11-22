@@ -45,7 +45,7 @@ public class ManageOrders extends javax.swing.JPanel {
         for (Restaurant restro:system.getRestaurantDirectory().getRestaurantList()) {
            
             if (restro.getAdminUName().equals(account.getUsername())) {
-                //System.out.println(restro.getOrderList());
+               
                for(Order menu:restro.getOrderList()){
                 Object[] row = new Object[5];
                 row[0] = menu;
