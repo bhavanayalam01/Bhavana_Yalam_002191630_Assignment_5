@@ -160,9 +160,7 @@ public class ManageInfo extends javax.swing.JPanel {
         }
         
         
-        //System.out.println(system.getRestaurantDirectory().getRestaurantList().get(0).getName());
         
-        //system.getRestaurantDirectory().getRestaurantList().updateRestaurantInfo(name, number, address);
         nameTxt.setEnabled(false);
         addressTxt.setEnabled(false);
         numTxt.setEnabled(false);
