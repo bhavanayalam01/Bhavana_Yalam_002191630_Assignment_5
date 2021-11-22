@@ -16,7 +16,7 @@ import java.util.ArrayList;
  * @author bhavana
  */
 public class UserAccountDirectory {
-   //private RestaurantDirectory resDir;
+  
     private ArrayList<UserAccount> userAccountList;
 
     public UserAccountDirectory() {

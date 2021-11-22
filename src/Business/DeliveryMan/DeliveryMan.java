@@ -19,7 +19,6 @@ public class DeliveryMan {
      private ArrayList<Order> orderList;
      public void addOrder(String restaurentName, String customerName, String deliverMan, ArrayList<Dishes> Order, String cost, String deliveryAddress) {
         Order order=new Order();
-        //order.setOrder_id(String.valueOf(id));
         order.setCustomerName(customerName);
         order.setRestaurentName(restaurentName);
         order.setDeliverMan(deliverMan);

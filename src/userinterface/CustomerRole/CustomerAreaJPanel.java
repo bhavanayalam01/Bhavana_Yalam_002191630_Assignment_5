@@ -49,10 +49,10 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
          
        
                 Object[] row = new Object[3];
-                //System.out.println();
+             
                 for(Restaurant restro:system.getRestaurantDirectory().getRestaurantList()){
                      row[0] = restro;
-                     //System.out.println(restro.getAdminUName());
+                
                      row[1] = restro.getAddress();
                      row[2] = restro.getNumber();
                      model.addRow(row);
@@ -241,7 +241,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
           for (Customer cust:system.getCustomerDirectory().getCustList()) {
            
             if (cust.getUserName().equals(account.getUsername())) {
-               // System.out.println(restro.getOrderList());
+            
                for(Order menu:cust.getOrderList()){
                 Object[] row = new Object[4];
                 row[0] = menu;
