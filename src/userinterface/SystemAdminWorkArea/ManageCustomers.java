@@ -302,7 +302,7 @@ public class ManageCustomers extends javax.swing.JPanel {
                 String pwd= (String) networkJTable.getValueAt(selectedRow, 2);
                 UserAccount user=system.getUserAccountDirectory().authenticateUser(username, pwd);
 
-                //UserAccount user = (UserAccount) networkJTable.getValueAt(selectedRow, 0);
+              
                 system.getUserAccountDirectory().deleteUserAccount(user);
                 system.getCustomerDirectory().deleteCustomer(user.getUsername());
                 populateNetworkTable();
