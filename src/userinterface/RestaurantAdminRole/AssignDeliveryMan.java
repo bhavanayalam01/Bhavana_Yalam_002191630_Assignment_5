@@ -39,7 +39,7 @@ public class AssignDeliveryMan extends javax.swing.JPanel {
         populateNetworkTable();
     }
     private void populateNetworkTable() {
-      //  jLabel1.setText("Order ID:"+order.getOrder_id());
+     
         DefaultTableModel model = (DefaultTableModel) DeliveryManJTable.getModel();
         
         model.setRowCount(0);
