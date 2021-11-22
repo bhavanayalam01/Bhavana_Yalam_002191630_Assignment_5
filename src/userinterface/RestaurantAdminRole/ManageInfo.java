@@ -46,7 +46,7 @@ public class ManageInfo extends javax.swing.JPanel {
                addressTxt.setText(restro.getAddress());
                numTxt.setText(restro.getNumber());
             }
-           //System.out.println(restro.getAdminUName());
+           
             
         }
     }

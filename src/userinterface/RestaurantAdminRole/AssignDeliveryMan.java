@@ -52,20 +52,7 @@ public class AssignDeliveryMan extends javax.swing.JPanel {
                 
                 model.addRow(row);
             }
-       /* 
-       // for()
-        for (UserAccount user : system.getUserAccountDirectory().getUserAccountList()) {
-            System.out.println(user.getRole().getClass().getName());
-            if ("Business.Role.DeliverManRole".equals(user.getRole().getClass().getName())) {
-                Object[] row = new Object[1];
-               
-                row[0] = user.getName();
-                
-                
-                model.addRow(row);
-            }
-            
-        }*/
+    
     }
     
 
