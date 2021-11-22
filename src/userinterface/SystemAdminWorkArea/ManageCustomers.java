@@ -283,7 +283,7 @@ public class ManageCustomers extends javax.swing.JPanel {
             nameJTextField.setText(user.getName()+"");
             uNameTextField.setText(user.getUsername()+"");
             PasswordField.setText(user.getPassword()+"");
-            // system.getUserAccountDirectory().deleteUserAccount(user);
+          
 
         }
         else {
