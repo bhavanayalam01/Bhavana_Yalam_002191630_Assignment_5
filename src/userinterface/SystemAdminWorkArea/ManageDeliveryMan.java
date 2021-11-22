@@ -209,7 +209,7 @@ public class ManageDeliveryMan extends javax.swing.JPanel {
         
         model.setRowCount(0);
         
-       // for()
+
         for (UserAccount user : system.getUserAccountDirectory().getUserAccountList()) {
             System.out.println(user.getRole().getClass().getName());
             if ("Business.Role.DeliverManRole".equals(user.getRole().getClass().getName())) {
