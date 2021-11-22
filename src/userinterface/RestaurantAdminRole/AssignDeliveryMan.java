@@ -70,7 +70,7 @@ public class AssignDeliveryMan extends javax.swing.JPanel {
         AssignOrderBtn = new javax.swing.JButton();
         BackBtn = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(0, 102, 102));
+        setBackground(new java.awt.Color(0, 51, 51));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         DeliveryManJTable.setModel(new javax.swing.table.DefaultTableModel(

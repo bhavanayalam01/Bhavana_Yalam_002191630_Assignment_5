@@ -58,7 +58,7 @@ public class ManageMenu extends javax.swing.JPanel {
         backBtn = new javax.swing.JButton();
         addDishBtn = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(0, 102, 102));
+        setBackground(new java.awt.Color(51, 51, 0));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -127,7 +127,7 @@ public class ManageMenu extends javax.swing.JPanel {
         });
         add(descTxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 330, 160, -1));
 
-        deleteBtn.setBackground(new java.awt.Color(0, 0, 0));
+        deleteBtn.setBackground(new java.awt.Color(102, 102, 102));
         deleteBtn.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         deleteBtn.setForeground(new java.awt.Color(255, 255, 255));
         deleteBtn.setText("Delete");

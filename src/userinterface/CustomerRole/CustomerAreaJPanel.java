@@ -43,7 +43,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
     }
     
     public void populateTable(){
-         DefaultTableModel model = (DefaultTableModel) restaurentTable.getModel();
+         DefaultTableModel model = (DefaultTableModel) restaurantTable.getModel();
         
         model.setRowCount(0);
          
@@ -74,7 +74,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        restaurentTable = new javax.swing.JTable();
+        restaurantTable = new javax.swing.JTable();
         requestTestJButton = new javax.swing.JButton();
         refreshTestJButton = new javax.swing.JButton();
         enterpriseLabel = new javax.swing.JLabel();
@@ -84,10 +84,10 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
         jScrollPane2 = new javax.swing.JScrollPane();
         pastTbl = new javax.swing.JTable();
 
-        setBackground(new java.awt.Color(0, 102, 102));
+        setBackground(new java.awt.Color(0, 51, 51));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        restaurentTable.setModel(new javax.swing.table.DefaultTableModel(
+        restaurantTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null},
                 {null, null, null},
@@ -113,16 +113,16 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
                 return canEdit [columnIndex];
             }
         });
-        jScrollPane1.setViewportView(restaurentTable);
-        if (restaurentTable.getColumnModel().getColumnCount() > 0) {
-            restaurentTable.getColumnModel().getColumn(0).setResizable(false);
-            restaurentTable.getColumnModel().getColumn(1).setResizable(false);
-            restaurentTable.getColumnModel().getColumn(2).setResizable(false);
+        jScrollPane1.setViewportView(restaurantTable);
+        if (restaurantTable.getColumnModel().getColumnCount() > 0) {
+            restaurantTable.getColumnModel().getColumn(0).setResizable(false);
+            restaurantTable.getColumnModel().getColumn(1).setResizable(false);
+            restaurantTable.getColumnModel().getColumn(2).setResizable(false);
         }
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(76, 130, 400, 97));
 
-        requestTestJButton.setBackground(new java.awt.Color(0, 0, 0));
+        requestTestJButton.setBackground(new java.awt.Color(102, 102, 102));
         requestTestJButton.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         requestTestJButton.setForeground(new java.awt.Color(255, 255, 255));
         requestTestJButton.setText("Order Food");
@@ -196,12 +196,12 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void requestTestJButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_requestTestJButtonActionPerformed
-        int selectedRow = restaurentTable.getSelectedRow();
+        int selectedRow = restaurantTable.getSelectedRow();
         if(selectedRow<0){
             JOptionPane.showMessageDialog(null,"Please select a row from the table to view details","Warning",JOptionPane.WARNING_MESSAGE);
         }
         else{
-           Restaurant restaurant = (Restaurant)restaurentTable.getValueAt(selectedRow, 0);
+           Restaurant restaurant = (Restaurant)restaurantTable.getValueAt(selectedRow, 0);
             
             
               MenuPanel manageMenu=new MenuPanel(userProcessContainer,account,system,restaurant);
@@ -226,7 +226,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
     private javax.swing.JTable pastTbl;
     private javax.swing.JButton refreshTestJButton;
     private javax.swing.JButton requestTestJButton;
-    private javax.swing.JTable restaurentTable;
+    private javax.swing.JTable restaurantTable;
     private javax.swing.JLabel valueLabel;
     private javax.swing.JLabel valueLabel1;
     private javax.swing.JLabel valueLabel2;
@@ -241,7 +241,7 @@ public class CustomerAreaJPanel extends javax.swing.JPanel {
           for (Customer cust:system.getCustomerDirectory().getCustList()) {
            
             if (cust.getUserName().equals(account.getUsername())) {
-            
+           
                for(Order menu:cust.getOrderList()){
                 Object[] row = new Object[4];
                 row[0] = menu;

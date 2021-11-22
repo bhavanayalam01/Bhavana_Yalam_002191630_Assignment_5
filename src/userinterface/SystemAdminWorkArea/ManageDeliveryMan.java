@@ -60,7 +60,7 @@ public class ManageDeliveryMan extends javax.swing.JPanel {
         PasswordField = new javax.swing.JPasswordField();
         jButton1 = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(0, 102, 102));
+        setBackground(new java.awt.Color(51, 51, 51));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         updateBtn.setBackground(new java.awt.Color(0, 0, 0));

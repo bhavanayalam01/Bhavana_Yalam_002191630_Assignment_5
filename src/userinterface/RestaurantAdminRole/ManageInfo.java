@@ -70,7 +70,7 @@ public class ManageInfo extends javax.swing.JPanel {
         SaveBtn = new javax.swing.JButton();
         UpdateBtn = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(0, 102, 102));
+        setBackground(new java.awt.Color(51, 51, 0));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));

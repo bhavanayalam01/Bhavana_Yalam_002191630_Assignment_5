@@ -96,11 +96,11 @@ public class MenuPanel extends javax.swing.JPanel {
         addressTxt = new javax.swing.JTextField();
         enterpriseLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 102, 102));
+        setBackground(new java.awt.Color(51, 51, 51));
         setForeground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        cardBtn.setBackground(new java.awt.Color(0, 0, 0));
+        cardBtn.setBackground(new java.awt.Color(102, 102, 102));
         cardBtn.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         cardBtn.setForeground(new java.awt.Color(255, 255, 255));
         cardBtn.setText("Add to Cart");
